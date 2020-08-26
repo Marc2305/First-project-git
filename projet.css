@@ -1,3 +1,11 @@
 html {
     font:normal normal 20px/30px serif;
 }
+
+.kirito, .asuna {
+    border:3px solid black;
+}
+
+.kirito {
+    background-color:purple;
+}
