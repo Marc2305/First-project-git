@@ -19,7 +19,7 @@
             }
 
             .asuna {
-                color:blue;
+                color:rgb(000,000,250);
             }
 
             .suguha {
@@ -65,11 +65,11 @@
                         <h3>Sinon</h3>
                         <p>Sinon est une amie de Kirito, ils se sont rencontrés sur Gun Gale Online pendant l'affaire 'Death Gun'</p>
                     </div>
-                    <div>
+                    <div class="klein">
                         <h3>Klein</h3>
                         <p>C'est un ami de Kirito, ils se sont rencontrés sur SAO et ont combattus ensemble à plusieurs reprises</p>
                     </div>
-                    <div>
+                    <div class="alice">
                         <h3>Alice</h3>
                         <p>Alice est une habitante de l'Underworld. Après avoir enfreint la Table des Interdits, elle fut capturé et emmenée à l'église de l'Axiome.
                             Elle fut alors reconverti en Chevalier de l'Intégrité. Finalement, elle se revolta et aida Kirito et Eugeo a vaincre Administrator et fut libéré de son emprise.
@@ -78,7 +78,7 @@
                 </section>
                 <section>
                     <div>
-                        <h3>Saison 1 - Arc Aincrad :</h3>
+                        <h3 id="saison1">Saison 1 - Arc Aincrad :</h3>
                         <p>2.000 joueurs sont coincés dans le tout nouveau VRMMORPG "Sword Art Online"</p>
                     </div>
                     <div>
@@ -142,6 +142,14 @@
             }
             else{
                 alert("Données invalide");
+            }
+
+            var s1 = document.getElementById('saison1');
+            s1.addEventListener('click', fPage);
+
+            function fPage(){
+                alert('Personnages présents dans la saison 1 Arc 1 : ' +
+                "\n - Kirito" + "\n - Asuna \n - Klein \n - Agil \n - Silica \n - Lisbeth");
             }
 
         </script>
