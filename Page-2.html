@@ -27,17 +27,20 @@
         <div class="div2">
             <h2>Second sous-titre</h2>
         </div>
+        <button>Recharger</button>
 
         <script>
             var div1 = document.querySelectorAll("div")[0];
             var div2 = document.querySelectorAll("div")[1];
             var titre1 = document.querySelectorAll("h2")[0];
             var titre2 = document.querySelectorAll("h2")[1];
+            var button1 = document.querySelectorAll("button")[0];
 
 
             div1.addEventListener("click", Ffenêtre);
             div2.addEventListener("click", fFenetre2);
             div1.addEventListener("dblclick", Ffenêtre2);
+            button1.addEventListener("click", RechargePage);
 
             function Ffenêtre(){
                 div1.style.fontSize = "30px";
@@ -50,6 +53,10 @@
 
             function Ffenêtre2(){
                 alert("c'est gagné !");
+            }
+
+            function RechargePage(){
+                location.reload();
             }
         </script>
     </body>
