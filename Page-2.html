@@ -32,6 +32,7 @@
         <div class="div2">
             <h2>Second sous-titre</h2>
         </div>
+        <p id="txt1"></p>
         <button>Recharger</button>
 
         <script>
@@ -40,8 +41,10 @@
             var titre1 = document.querySelectorAll("h2")[0];
             var titre2 = document.querySelectorAll("h2")[1];
             var button1 = document.querySelectorAll("button")[0];
+            var texte1 = document.getElementById("txt1");
+            var url = location.pathname;
 
-
+            texte1.innerHTML = url;
             div1.addEventListener("click", Ffenêtre);
             div2.addEventListener("click", fFenetre2);
             div1.addEventListener("dblclick", Ffenêtre2);
