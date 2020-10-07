@@ -38,6 +38,13 @@
             <h2>Second sous-titre</h2>
         </div>
         <p id="txt1"></p>
+        <div>
+            <p></p>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>Résultats :</button>
+        </div>
         <button>Recharger</button>
 
         <script>
@@ -48,6 +55,14 @@
             var button1 = document.querySelectorAll("button")[0];
             var texte1 = document.getElementById("txt1");
             var url = location.pathname;
+
+            var A = document.querySelectorAll("button")[0];
+            var B = document.querySelectorAll("button")[1];
+            var C = document.querySelectorAll("button")[2];
+
+            A.addEventListener("click", FunctionA);
+            B.addEventListener("click", FunctionB);
+            C.addEventListener("click", FunctionC);
 
             texte1.innerHTML = url;
             div1.addEventListener("click", Ffenêtre);
