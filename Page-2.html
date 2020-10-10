@@ -22,6 +22,7 @@
                 width:300px;
                 background-color:blueviolet;
             }
+
             button {
                 height:50px;
                 width:100px;
@@ -60,10 +61,12 @@
             var A = document.querySelectorAll("button")[0];
             var B = document.querySelectorAll("button")[1];
             var C = document.querySelectorAll("button")[2];
+            var result = document.querySelectorAll("button")[3];
 
             A.addEventListener("click", FunctionA);
             B.addEventListener("click", FunctionB);
             C.addEventListener("click", FunctionC);
+            result.addEventListener("click", FunctionResult)
 
             texte1.innerHTML = url;
             div1.addEventListener("click", Ffenêtre);
@@ -101,6 +104,10 @@
 
             function function1C(){
                 x += 3;
+            }
+
+            function FunctionResult(){
+                console.log(x);
             }
         </script>
     </body>
