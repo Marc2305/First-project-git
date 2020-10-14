@@ -27,26 +27,41 @@
                 height:50px;
                 width:100px;
             }
+
+            footer {
+                background-color:rgba(200,200,200,0.8);
+            }
         </style>
     </head>
 
     <body>
-        <h1>Seconde page</h1>
-        <div class="div1">
-            <h2>Premier sous-titre</h2>
-        </div>
-        <div class="div2">
-            <h2>Second sous-titre</h2>
-        </div>
-        <p id="txt1"></p>
-        <div>
-            <p></p>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>Résultats : </button>
-        </div>
-        <button>Recharger</button>
+        <header>
+            <h1>Seconde page</h1>
+        </header>
+        <main>
+            <article>
+                <section>
+                    <div class="div1">
+                        <h2>Premier sous-titre</h2>
+                    </div>
+                    <div class="div2">
+                        <h2>Second sous-titre</h2>
+                    </div>
+                    <p id="txt1"></p>
+                    <div>
+                        <p></p>
+                        <button>1</button>
+                        <button>2</button>
+                        <button>3</button>
+                        <button>Résultats : </button>
+                    </div>
+                    <button>Recharger</button>
+                </section>
+            </article>
+        </main>
+        <footer>
+            <p>Copyright - Toute reproduction interdite - 2020</p>
+        </footer>
 
         <script>
             var div1 = document.querySelectorAll("div")[0];
