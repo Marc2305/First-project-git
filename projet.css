@@ -1,5 +1,9 @@
+* {
+    font-family: Arial;
+}
+
 html {
-    font:normal normal 20px/30px serif;
+    font-size: 20px;
 }
 
 .kirito, .asuna {
